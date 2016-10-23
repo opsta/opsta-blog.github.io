@@ -17,7 +17,7 @@ title: Opsta Blog
 email: contact@opsta.io
 description: > # We build scale
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://blog.opsta.io" # the base hostname & protocol for your site
+url: "http://blog.opsta.io" # the base hostname & protocol for your site
 twitter_username: opsta
 github_username:  opsta
 
