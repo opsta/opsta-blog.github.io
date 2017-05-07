@@ -14,10 +14,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Opsta Blog
-email: contact@opsta.io
+email: contact@opsta.co.th
 description: > # We build scale
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://blog.opsta.io" # the base hostname & protocol for your site
+url: "https://blog.opsta.io" # the base hostname & protocol for your site
 twitter_username: opsta
 github_username:  opsta
 
