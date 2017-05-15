@@ -35,15 +35,22 @@ $on-laptop:        800px;
 //     }
 // }
 
-.center-image
-{
+.center-image {
   margin: 0 auto;
   display: block;
 }
-.center-text
-{
+.center-text {
   text-align: center;
   display: block;
+}
+.index-header {
+  margin-bottom: 40px;
+}
+.caption {
+  margin: -10px 0 30px;
+}
+img {
+  margin: 20px 0;
 }
 
 // Import partials from the `minima` theme.
