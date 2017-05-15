@@ -35,5 +35,16 @@ $on-laptop:        800px;
 //     }
 // }
 
+.center-image
+{
+  margin: 0 auto;
+  display: block;
+}
+.center-text
+{
+  text-align: center;
+  display: block;
+}
+
 // Import partials from the `minima` theme.
 @import "minima";
