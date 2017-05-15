@@ -611,5 +611,25 @@ p {
   }
 }
 
+
+#about-opsta {
+  width: 100%;
+}
+#about-opsta img {
+  float: left;
+  min-width: 120px;
+  width: 10%;
+  margin: 0 20px 20px 0;
+}
+#about-opsta div {
+  float: left;
+  margin: 0 0 20px;
+
+  width: 80%;
+}
+.clear {
+  clear: both;
+}
+
 // Import partials from the `minima` theme.
 @import "minima";
