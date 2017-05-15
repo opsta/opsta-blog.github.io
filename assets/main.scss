@@ -4,15 +4,15 @@
 @charset "utf-8";
 
 // Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
+$base-font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+$base-font-size:   18px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
+$text-color:       #777;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
 
@@ -21,7 +21,7 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    800px;
+$content-width:    1280px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
@@ -35,15 +35,600 @@ $on-laptop:        800px;
 //     }
 // }
 
-.center-image
-{
-  margin: 0 auto;
+.center-image {
+  margin: 30px auto;
   display: block;
 }
-.center-text
-{
+.center-text {
   text-align: center;
   display: block;
+}
+.index-header {
+  margin-bottom: 40px;
+}
+.caption {
+  margin: -10px 0 30px;
+}
+img {
+  margin: 20px 0;
+}
+
+body {
+    font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    color: #777;
+}
+@media only screen and (min-width: 48em) {
+    body {
+        font-weight: 300;
+    }
+}
+img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+a {
+    color: #F17273;
+    text-decoration: none;
+    -webkit-transition: color .2s;
+    transition: color .2s;
+}
+a:hover {
+    color: #36404C;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #36404C;
+    margin-top: 0;
+}
+figure {
+    margin: 0;
+}
+p {
+    margin-top: 0;
+}
+.btn {
+    display: block;
+    text-align: center;
+    background-color: #fff;
+    border: 3px solid #36404C;
+    color: #36404C;
+    border-radius: 3px;
+    padding: 10px 0;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.btn:hover {
+    border-color: #F17273;
+    color: #F17273;
+}
+.btn .fa {
+    display: inline-block;
+    margin-right: 15px;
+}
+.container {
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 15px;
+}
+.section-main {
+    margin-top: 140px;
+}
+.section {
+    padding-bottom: 30px;
+}
+.title {
+    font-family: "Prompt", Arial, sans-serif;
+    margin: 0;
+}
+@media only screen and (min-width: 48em) {
+    .title {
+        font-size: 64px;
+    }
+}
+.title-section {
+    font-family: "Prompt", Arial, sans-serif;
+    font-size: 48px;
+    border-left: 8px solid #F17273;
+    position: relative;
+    background-color: #fff;
+    line-height: 40px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.title-section > b {
+    background-color: #fff;
+    display: inline-block;
+    position: relative;
+    padding: 0 15px;
+    z-index: 20;
+}
+.title-section:after {
+    content: '';
+    width: 100%;
+    background-color: #D8D8D8;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+.sub-title {
+    font-size: 38px;
+    margin: 15px 0;
+}
+.grid:before,
+.grid:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+@media only screen and (min-width: 48em) {
+    .grid {
+        margin: 0 -20px;
+    }
+}
+@media only screen and (min-width: 48em) {
+    .col-6 {
+        float: left;
+        padding: 0 20px;
+        width: 50%;
+    }
+}
+@media only screen and (min-width: 48em) {
+    .col-left {
+        float: left;
+        padding: 0 20px;
+        width: 30%;
+    }
+}
+@media only screen and (min-width: 48em) {
+    .col-right {
+        float: left;
+        padding: 0 20px;
+        width: 70%;
+    }
+}
+/**
+  1. Header
+  2. Intro Company
+  3. Service and Product
+  4. About us
+  5. Event
+  6. Clients
+  7. Contact us
+  7. Footer
+**/
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 30px 0;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.header nav {
+    overflow: hidden;
+}
+.header #logo {
+    float: left;
+}
+.header #logo img {
+    display: block;
+    height: 80px;
+    margin: 0;
+}
+.header ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    float: right;
+}
+.header ul > li {
+    display: inline-block;
+    line-height: 4em;
+    margin: 0 15px;
+}
+.header a, .header a:visited {
+    font-family: "Prompt", Arial, sans-serif;
+    color: #36404C;
+    font-weight: 400;
+}
+.nav-link::before {
+    content: "";
+    display: block;
+    height: 150px;
+    margin: -150px 0 0;
+}
+.intro {
+    font-family: "Circular", Arial, sans-serif;
+}
+.poster {
+    margin: 30px 0;
+}
+.company-intro {
+    min-height: 440px;
+    position: relative;
+}
+@media only screen and (min-width: 64em) {
+    .company-intro {
+        padding-bottom: 174px;
+    }
+}
+@media only screen and (min-width: 48em) {
+    .we-are-openstack {
+        padding-top: 69.9999px;
+    }
+}
+.intro-vision {
+    font-size: 22px;
+}
+@media only screen and (min-width: 48em) {
+    .intro-vision {
+        max-width: 540px;
+    }
+}
+.trusted-title {
+    font-size: 18px;
+    padding-top: 30px;
+}
+.trusted-by-our-costermers img {
+    margin-right: 15px;
+}
+.we-build-scale {
+    margin: -15px;
+}
+@media only screen and (min-width: 64em) {
+    .we-build-scale {
+        margin: 0;
+        max-width: 60%;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+.service-section {
+    padding-bottom: 50px;
+}
+.description-section {
+    font-family: "Circular", Arial, sans-serif;
+}
+.intro strong,
+.section strong {
+    font-weight: bold;
+}
+.section-img {
+    margin: 30px 0;
+    text-align: center;
+}
+.section p {
+    font-family: "Circular", Arial, sans-serif;
+}
+.description-section p {
+    margin-bottom: 10px;
+}
+.service-lists {
+    padding-top: 45px;
+}
+.service-lists .list-item {
+    margin-bottom: 30px;
+}
+.title-service {
+    font-size: 28px;
+    margin: 0 0 5px;
+}
+.icon-service {
+    float: left;
+    overflow: hidden;
+    margin-right: 30px;
+    height: 48px;
+}
+@media only screen and (min-width: 48em) {
+    .icon-service {
+        height: auto;
+    }
+}
+.detail {
+    clear: left;
+    margin-top: 15px;
+}
+@media only screen and (min-width: 48em) {
+    .detail {
+        clear: none;
+        margin-top: 0;
+    }
+}
+.photo-event {
+    border-bottom: 8px solid #F17273;
+    margin-bottom: 10px
+}
+.founder-opsta {
+    overflow: hidden;
+    padding: 20px;
+}
+.founder {
+    float: left;
+    margin: 0 0 20px 39.999px;
+    position: relative;
+}
+.founder > img {
+    position: relative;
+    z-index: 10;
+}
+.founder:after {
+    background-color: #F17273;
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    content: '';
+    bottom: -10px;
+    right: -10px;
+}
+#name {
+    font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 38px;
+    font-weight: 300;
+    margin-top: -10px;
+    margin-bottom: 0;
+}
+.bio {
+    float: left;
+}
+.expert {
+    font-family: "Prompt", Arial, sans-serif;
+    font-size: 35px;
+    margin: 0;
+}
+.global-event {
+    background-image: url(../img/full-bg-event.jpg);
+    background-color: #36404C;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    padding-top: 615px;
+    padding-bottom: 75px;
+    color: #fff;
+}
+.openstack-submit {
+    border-left: 42px solid #F17273;
+    padding-left: 30px;
+}
+.title-event {
+    color: #fff;
+    font-size: 48px;
+    line-height: 42px;
+}
+.event-date-time {
+    font-size: 22px;
+}
+.description-event {
+    font-size: 28px;
+}
+.more-photo-event {
+    font-size: 22px;
+}
+.more-photo-event a {
+    text-decoration: underline;
+    color: #fff;
+    display: inline-block;
+    margin-left: 15px;
+}
+.more-photo-event a:hover {
+    color: #F17273;
+}
+.more-photo-event .icon-photo {
+    margin-right: 15px;
+}
+.our-clients-and-partner {
+    padding: 110px 0;
+}
+.our-clients-and-partner .title-section:after {
+    display: none;
+}
+.our-partner .first-partner {
+    margin-right: 60px;
+}
+.contact-us {
+    border-top: 1px solid #D8D8D8;
+    padding-top: 30px;
+    padding: 50px 0;
+    color: #36404C;
+}
+.contact-us .title {
+    margin-bottom: 15px;
+}
+.contact-us p {
+    font-size: 22px;
+    max-width: 540px;
+}
+.list-contact {
+    padding-top: 30px;
+    font-size: 28px;
+    color: #36404C;
+}
+.list-contact span {
+    display: inline-block;
+    margin: 0 15px 0 0;
+}
+.box-other-site {
+    background-color: #f0f4f6;
+    padding: 15px;
+    border-bottom: 8px solid #F17273;
+}
+.box-other-site .title-box {
+    letter-spacing: 2px;
+}
+.box-other-site p {
+    color: #36404C;
+    font-size: 18px;
+}
+.box-other-site .icon-social {
+    background-color: #fff;
+    display: inline-block;
+    font-weight: 400;
+    color: #36404C;
+    border-radius: 3px;
+    padding: 6px 16px;
+    border: 1px solid #D8D8D8;
+}
+.box-other-site .icon-social:hover {
+    color: #F17273;
+}
+.box-other-site {
+    font-family: "Circular", Arial, sans-serif;
+}
+.link-blog {
+    font-size: 22px;
+    font-weight: 400;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.thanks {
+    padding-top: 30px;
+    font-weight: 400;
+}
+.ceo-contact {
+    display: block;
+    border-radius: 100%;
+    float: left;
+    overflow: hidden;
+    margin-right: 15px;
+    height: 64px;
+}
+.footer-content {
+    background-color: #262c30;
+    padding: 45px 0;
+    color: #D8D8D8;
+    overflow: auto;
+    font-size: 14px;
+}
+.footer-content .copyright {
+    opacity: .7;
+    margin: 0;
+}
+@media only screen and (min-width: 64em) {
+    .footer-content .copyright {
+        float: left;
+    }
+}
+.footer-content .privacy {
+    margin: 0;
+}
+@media only screen and (min-width: 64em) {
+    .footer-content .privacy {
+        float: right;
+    }
+}
+.footer-content .privacy a {
+    color: #D8D8D8;
+    letter-spacing: 2px;
+    opacity: .7;
+}
+
+@media only screen and (max-width: 48em) {
+  body {
+    font-size: 16px;
+  }
+
+  .header {
+    padding: 0;
+  }
+
+  .header nav {
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    overflow: auto;
+  }
+
+  .header #logo {
+    float: none;
+    text-align: center;
+  }
+
+  .header #logo img {
+    height: 24px;
+    margin: 16px auto;
+  }
+
+  .header ul {
+    overflow-y: scroll;
+    white-space: nowrap;
+    float: none;
+  }
+
+  .header ul > li {
+    line-height: 30px;
+    font-size: 14px;
+    display: inline-block;
+    margin-left: 0;
+  }
+
+  .section-main {
+    margin-top: 120px;
+  }
+
+  .expert {
+    font-size: 24px;
+  }
+
+  .title-section {
+    font-size: 32px;
+  }
+
+  .founder {
+    float: none;
+    margin: 0;
+  }
+
+  .founder:after {
+    display: none;
+  }
+
+  .bio {
+    float: none;
+    margin-top: 2em;
+  }
+
+  .founder-opsta ul {
+    margin-left: 1em;
+    padding: 0;
+  }
+}
+
+
+#about-opsta {
+  width: 100%;
+}
+#about-opsta img {
+  float: left;
+  min-width: 120px;
+  width: 10%;
+  margin: 0 20px 20px 0;
+}
+#about-opsta div {
+  float: left;
+  margin: 0 0 20px;
+
+  width: 80%;
+}
+.clear {
+  clear: both;
 }
 
 // Import partials from the `minima` theme.
