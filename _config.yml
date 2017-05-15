@@ -24,3 +24,6 @@ github_username:  opsta
 # Build settings
 markdown: kramdown
 theme: minima
+
+excerpt_separator: <!--more-->
+google_analytics: UA-130152-31

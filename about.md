@@ -1,15 +1,7 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: About Opsta
+permalink: /about-opsta/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jekyll" %} /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+We are the leader of OpenStack expert in Thailand who has experiences in building and managing private cloud OpenStack clusters to handle production workload more than 30 million page views per day. We provide consulting, implementation, training and managed service for private cloud OpenStack. We are professional DevOps team with Certified OpenStack Administrator (COA) and qualified OpenStack contributor to extend the upstream capabilities of OpenStack to meet your specific needs.
