@@ -6,7 +6,7 @@ categories: openstack-ansible
 fbcomments: yes
 ---
 
-![OpenStack Overview Diagram]({{ site.url }}/assets/20170515/openstack-overview-diagram.png)
+![OpenStack Overview Diagram]({{ site.url }}/assets/20170515/openstack-overview-diagram.png){: .center-image }
 
 ปัญหาแรกสุดของเหล่า OpenStacker มือใหม่ที่อยากจะลองเล่น [OpenStack][openstack] คือ ไม่มีเครื่องเซิร์ฟเวอร์ที่สเปคสูงพอ และไม่รู้จะเริ่มลง OpenStack ได้ยังไง วันนี้เราเลยมาเสนอทางที่ Opsta เลือกใช้ในการอบรม [Opsta OpenStack Administration Workshop][openstack-workshop] ที่เช่าใช้เซิร์ฟเวอร์ราคาถูกบน Digital Ocean และใช้ user-data script ทำให้สามารถลง OpenStack มาเล่นได้ในภายใน script เดียว
 
@@ -44,7 +44,7 @@ fbcomments: yes
 เมื่อเราแก้ปัญหาเรื่องเซิร์ฟเวอร์ได้แล้ว เราก็มาเริ่มลงกันเลยดีกว่า แต่ก่อนที่จะเริ่มลง เราต้องเข้าใจก่อนว่า OpenStack all-in-one ก็จะมีหลายค่ายให้เล่น ตั้งแต่ [ลองลงแบบ manual เอง][openstack-manual-install] (โหดเกิ๊นนน), [DevStack][devstack], [Packstack][packstack] หรือ [OpenStack Ansible][openstack-ansible] ที่ Opsta จะนำมาเป็นตัวอย่างในการติดตั้ง OpenStack all-in-one ในบล็อกนี้
 
 ![OpenStack Ansible Logo]({{ site.url }}/assets/20170515/osa-logo.png)
-*รูปสัตว์โลโก้ของ OpenStack Ansible คือ Cape Buffalo*{: .center-text .caption }
+*รูปโลโก้มาสค็อตของ OpenStack Ansible คือ Cape Buffalo*{: .center-text .caption }
 
 [OpenStack Ansible][openstack-ansible] หรือ OSA คือโปรเจคหนึ่งของ OpenStack ที่จะมาช่วยติดตั้ง ตั้งค่า และจัดการ OpenStack cluster ด้วย [Ansible][ansible] playbooks โดยจะสามารถติดตั้งและดูแลได้ทั้ง all-in-one หรือ OpenStack cluster ใน production ที่มีขนาดเป็นร้อยเป็นพันเครื่องได้ โดยปัจจุบัน OpenStack Ansible ได้ถูกพัฒนาจนเป็นตัวเลือกแรกที่ถูกแนะนำให้ใช้ในการติดตั้ง OpenStack ใน [OpenStack Deployment Guides][openstack-deployment-guide] และ OpenStack Foundataion เลือกเป็นตัวที่ใช้ในการเตรียม environment ที่ใช้ในการสอบ [Certified OpenStack Administrator][coa] (COA) เลยทีเดียว
 
@@ -57,7 +57,7 @@ fbcomments: yes
 - ขั้นแรกให้เราไปสมัครสมาชิก [Digital Ocean][digital-ocean] พร้อมใส่หมายเลขบัตรเครดิตให้เรียบร้อย **หรือถ้าอยากได้ credit $10 ฟรี** ให้กดสมัครผ่าน [referrer][do-referrer] ของเราอันนี้เลยครับ
 - เสร็จแล้วที่หน้าหลัก ให้เราเลือก **Create Droplet** ซึ่ง Digital Ocean จะเรียก Virtual Machine ที่ถูกสร้างขึ้นว่า Droplet ครับ
 
-![Digital Ocean Main Page]({{ site.url }}/assets/20170515/do-main.png)
+![Digital Ocean Main Page]({{ site.url }}/assets/20170515/do-main.png){: .center-image }
 
 - ที่หน้าจอ Create Droplets ให้เราเลือกดังนี้
   - *Choose an image* เลือกเป็น Distributions **Ubuntu 16.04.2 x64**
@@ -101,11 +101,11 @@ fbcomments: yes
   - *Add your SSH keys* ถ้าต้องการ SSH โดยไม่ต้องใส่รหัสผ่าน ก็ให้คลิ๊กที่ **New SSH Key** แล้วใส่ public key ของเราลงไป แต่ถ้าไม่ใส่ หลังจากสร้าง droplet เสร็จ จะมีรหัสผ่านที่ถูกสุ่มขึ้นมาส่งมาให้ทางอีเมลของเราครับ
   - *Finalize and create* อันนี้จะเป็นการเลือกจำนวน และตั้งชื่อ droplet ที่เราจะสร้างขึ้นมาครับ เสร็จแล้วให้กดปุ่ม **Create** เพื่อสร้าง droplet ได้เลย
 
-![Digital Ocean Create Droplet]({{ site.url }}/assets/20170515/do-create-droplet.png)
+![Digital Ocean Create Droplet]({{ site.url }}/assets/20170515/do-create-droplet.png){: .center-image }
 
 - เสร็จแล้วรอให้มันสร้าง droplet สักครู่ หลังจากสร้างเสร็จจะมีไอพีแสดงขึ้นมา ให้เรา copy ไอพีเก็บไว้
 
-![Digital Ocean Create Droplet]({{ site.url }}/assets/20170515/do-droplet.png)
+![Digital Ocean Create Droplet]({{ site.url }}/assets/20170515/do-droplet.png){: .center-image }
 
 - เสร็จแล้วให้เรา SSH เข้าไปยัง droplet ที่เราเพิ่งสร้างขึ้น
 
@@ -133,9 +133,9 @@ cat ~/openrc | grep OS_PASSWORD
 ช่วงขายของ
 --------------------
 
-![Opsta OpenStack Administration Workshop](https://c1.staticflickr.com/1/668/33152027051_c3deddab8c_b.jpg)
-
 ติดตั้ง OpenStack เสร็จแล้ว จะเล่นยังไงต่อดี? ตอนนี้ Opsta เปิดอบรม [Opsta OpenStack Administration Workshop รุ่นที่ 5][openstack-workshop] ซึ่งเราจะเน้นที่การทำแล็ป OpenStack ในการใช้งานจริง ไปพร้อมกับทำความเข้าใจการทำงานร่วมกันระหว่างโปรเจคต่างๆ ของ OpenStack ซึ่งจะทำให้คนที่เข้าอบรมสามารถเข้าใจ และสามารถดูแลระบบของ OpenStack ได้ รวมถึงสามารถกลับเอาไปทดลองเล่นต่อที่บ้านหรือบริษัทของท่านได้ทันที ดูรายละเอียดและรีบสมัครกันเข้ามาที่ [https://training.opsta.io][openstack-workshop] ก่อนที่ที่นั่งจะเต็มหมดก่อนนะครับ ตอนนี้เหลืออยู่อีกไม่กี่ที่แล้ว
+
+![Opsta OpenStack Administration Workshop](https://c1.staticflickr.com/1/668/33152027051_c3deddab8c_b.jpg){: .center-image }
 
 
 
