@@ -46,7 +46,7 @@ fbcomments: yes
 ![OpenStack Ansible Logo]({{ site.url }}/assets/20170515/osa-logo.png)
 *รูปโลโก้มาสค็อตของ OpenStack Ansible คือ Cape Buffalo*{: .center-text .caption }
 
-[OpenStack Ansible][openstack-ansible] หรือ OSA คือโปรเจคหนึ่งของ OpenStack ที่จะมาช่วยติดตั้ง ตั้งค่า และจัดการ OpenStack cluster ด้วย [Ansible][ansible] playbooks โดยจะสามารถติดตั้งและดูแลได้ทั้ง all-in-one หรือ OpenStack cluster ใน production ที่มีขนาดเป็นร้อยเป็นพันเครื่องได้ โดยปัจจุบัน OpenStack Ansible ได้ถูกพัฒนาจนเป็นตัวเลือกแรกที่ถูกแนะนำให้ใช้ในการติดตั้ง OpenStack ใน [OpenStack Deployment Guides][openstack-deployment-guide] และ OpenStack Foundataion เลือกเป็นตัวที่ใช้ในการเตรียม environment ที่ใช้ในการสอบ [Certified OpenStack Administrator][coa] (COA) เลยทีเดียว
+[OpenStack Ansible][openstack-ansible] หรือ OSA คือโปรเจคหนึ่งของ OpenStack ที่จะมาช่วยติดตั้ง ตั้งค่า และจัดการ OpenStack cluster ด้วย [Ansible][ansible] playbooks โดยจะสามารถติดตั้งและดูแลได้ทั้ง all-in-one หรือ OpenStack cluster ใน production ที่มีขนาดเป็นร้อยเป็นพันเครื่องได้ โดยปัจจุบัน OpenStack Ansible ได้ถูกพัฒนาจนเป็นตัวเลือกแรกที่ถูกแนะนำให้ใช้ในการติดตั้ง OpenStack ใน [OpenStack Deployment Guides][openstack-deployment-guide] และ [OpenStack Foundation][openstack-foundation] เลือกเป็นตัวที่ใช้ในการเตรียม environment ที่ใช้ในการสอบ [Certified OpenStack Administrator][coa] (COA) เลยทีเดียว
 
 
 เริ่มติดตั้ง OpenStack
@@ -133,7 +133,7 @@ cat ~/openrc | grep OS_PASSWORD
 ช่วงขายของ
 --------------------
 
-ติดตั้ง OpenStack เสร็จแล้ว จะเล่นยังไงต่อดี? ตอนนี้ Opsta เปิดอบรม [Opsta OpenStack Administration Workshop รุ่นที่ 5][openstack-workshop] ซึ่งเราจะเน้นที่การทำแล็ป OpenStack ในการใช้งานจริง ไปพร้อมกับทำความเข้าใจการทำงานร่วมกันระหว่างโปรเจคต่างๆ ของ OpenStack ซึ่งจะทำให้คนที่เข้าอบรมสามารถเข้าใจ และสามารถดูแลระบบของ OpenStack ได้ รวมถึงสามารถกลับเอาไปทดลองเล่นต่อที่บ้านหรือบริษัทของท่านได้ทันที ดูรายละเอียดและรีบสมัครกันเข้ามาที่ [https://training.opsta.io][openstack-workshop] ก่อนที่ที่นั่งจะเต็มหมดก่อนนะครับ ตอนนี้เหลืออยู่อีกไม่กี่ที่แล้ว
+ติดตั้ง OpenStack เสร็จแล้ว จะเล่นยังไงต่อดี? ตอนนี้ Opsta เปิดอบรม [Opsta OpenStack Administration Workshop][openstack-workshop] ซึ่งเราจะเน้นที่การทำแล็ป OpenStack ในการใช้งานจริง ไปพร้อมกับทำความเข้าใจการทำงานร่วมกันระหว่างโปรเจคต่างๆ ของ OpenStack ซึ่งจะทำให้คนที่เข้าอบรมสามารถเข้าใจ และสามารถดูแลระบบของ OpenStack ได้ รวมถึงสามารถกลับเอาไปทดลองเล่นต่อที่บ้านหรือบริษัทของท่านได้ทันที ดูรายละเอียดและรีบสมัครกันเข้ามาที่ [https://training.opsta.io][openstack-workshop] ก่อนที่ที่นั่งจะเต็มหมดก่อนนะครับ ตอนนี้เหลืออยู่อีกไม่กี่ที่แล้ว
 
 ![Opsta OpenStack Administration Workshop](https://c1.staticflickr.com/1/668/33152027051_c3deddab8c_b.jpg){: .center-image }
 
@@ -148,6 +148,7 @@ cat ~/openrc | grep OS_PASSWORD
 [packstack]: https://www.rdoproject.org/install/quickstart/
 [openstack-ansible]: https://docs.openstack.org/developer/openstack-ansible/
 [openstack-deployment-guide]: https://docs.openstack.org/project-deploy-guide/ocata/
+[openstack-foundation]: https://www.openstack.org/foundation/
 [coa]: https://www.openstack.org/coa/
 [ansible]: https://www.ansible.com/
 [do-referrer]: https://m.do.co/c/7a8e05c5cc09
