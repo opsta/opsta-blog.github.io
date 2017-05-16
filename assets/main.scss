@@ -611,6 +611,33 @@ p {
   }
 }
 
+.box {
+    background-color: #f0f4f6;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.box .title-box {
+    letter-spacing: 2px;
+}
+.box p {
+    color: #36404C;
+    font-size: 18px;
+}
+.box .icon-social {
+    background-color: #fff;
+    display: inline-block;
+    font-weight: 400;
+    color: #36404C;
+    border-radius: 3px;
+    padding: 6px 16px;
+    border: 1px solid #D8D8D8;
+}
+.box .icon-social:hover {
+    color: #F17273;
+}
+.box {
+    font-family: "Circular", Arial, sans-serif;
+}
 
 #about-opsta {
   width: 100%;
