@@ -658,5 +658,9 @@ p {
   clear: both;
 }
 
+img[alt="Certified OpenStack Administrator"] {
+  width: 300px;
+}
+
 // Import partials from the `minima` theme.
 @import "minima";
