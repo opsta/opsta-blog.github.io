@@ -1,12 +1,13 @@
 ---
 layout: post
-title:  "สิ่งที่ควรรู้และการเตรียมตัวสอบ Certified OpenStack Administrator (COA)"
-date:   2017-07-05 13:33:33 +0700
+title: "สิ่งที่ควรรู้และการเตรียมตัวสอบ Certified OpenStack Administrator (COA)"
+date: 2017-07-05 13:33:33 +0700
 categories: openstack
+image: /assets/20170705/coa-badge.png
 fbcomments: yes
 ---
 
-![Certified OpenStack Administrator]({{ site.url }}/assets/20170705/coa-badge.svg){: .center-image }
+![Certified OpenStack Administrator]({{ site.url }}/assets/20170705/coa-badge.png){: .center-image }
 
 วันนี้มาเขียนบล็อกฉลองในโอกาสครบรอบ 7 ปีของ OpenStack เลยจะมาแชร์ประสบการณ์การสอบ Certified OpenStack Administrator หรือที่เรียกสั้นๆ ว่า COA มาให้ฟังกันครับ
 
