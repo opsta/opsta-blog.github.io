@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "สรุปบรรยากาศ และ Highlight จากงาน GDG Bangkok 1st Meetup"
+title: "สรุป Highlight จากงาน GDG Bangkok 1st Meetup"
 date: 2017-09-29 13:14:15 +0700
 categories: meetup
 image: /assets/20170929/gdg-bangkok-banner.jpeg
