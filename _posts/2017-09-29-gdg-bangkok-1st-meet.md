@@ -13,10 +13,11 @@ fbcomments: yes
 
 สำหรับใครที่ไม่ได้มาร่วมงาน หรืออยากอ่านสรุปย้อนหลังตามได้จากที่นี่เลยครับ
 
-งาน
+งาน GDG Bangkok 1st Meetup ครั้งนี้ถูกจัดขึ้นที่ Google Office Thailand ที่อาคาร Park Ventures ชั้น 16 แถวๆ BTS เพลินจิตนี่เอง ถึงแม้ชื่องานจะเป็นจังหวัดกรุงเทพมหานคร แต่เราเปิดรับผู้เข้าร่วมงานจากทุกจังหวัดแน่นอนครับ หากใครพลาดงานนี้ รอติดตามงาน Meetup ครั้งต่อไปของกลุ่มเราได้เลย
+
+<!--more-->
 
 ---
-<!--more-->
 #### Introduction to Google Cloud by Paiboon Wongsasutthikul
 
 คุณ **Paiboon Wongsasutthikul** เป็น Cloudify & Digitize Southeast Asia ที่ Google ได้มาเหล่าความเป็นมาของ Google โดยแบ่งยุคของโลกไอทีเป็น 3 ส่วน
