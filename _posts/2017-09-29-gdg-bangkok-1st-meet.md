@@ -4,11 +4,11 @@ title: "สรุป Highlight จากงาน GDG Cloud Bangkok 1st Meetup"
 author_github: mrnonz
 date: 2017-09-29 13:14:15 +0700
 categories: meetup
-image: /assets/20170929/gdg-bangkok-banner.jpeg
+image: /assets/20170929/small-banner-gdg-cloud-bangkok.jpg
 fbcomments: yes
 ---
 
-![GDG Cloud Bangkok Banner]({{ site.url }}/assets/20170929/gdg-bangkok-banner.jpeg){: .center-image }
+![GDG Cloud Bangkok Banner]({{ site.url }}/assets/20170929/small-banner-gdg-cloud-bangkok.jpg){: .center-image }
 
 # GDG Cloud Bangkok 1st Meetup.
 
