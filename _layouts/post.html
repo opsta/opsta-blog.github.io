@@ -3,6 +3,7 @@ layout: default
 ---
 
 {% include facebook-init.html %}
+{% assign author = site.authors[page.author] %}
 
 <section class="section-main container">
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
@@ -14,9 +15,12 @@ layout: default
         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
         {{ page.date | date: date_format }}
       </time>
-      {% if page.author %}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
-      {% endif %}</p>
+      {% if site.data.authors %}
+        <span>
+          Written by <a href="{{ site.data.authors[page.author_github].web }}" target="_blank">{{ site.data.authors[page.author_github].name }}</a>
+        </span>
+      {% endif %}
+    </p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
